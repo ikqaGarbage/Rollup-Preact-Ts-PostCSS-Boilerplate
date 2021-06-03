@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "dashes",
+          "customMatcher": "\\.m\\.css$",
+          "customRenderer": "./myRenderer.js",
+          "dotenvOptions": {},
+          "postCssOptions": {},
+          "rendererOptions": {}
+        }
+      }
+    ],
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "jsx":"preserve",
+    "jsxFactory": "h",
+    "jsxImportSource": "preact",
+    "lib": [
+      "dom",
+      "es2015",
+      "es5",
+      "es6"
+    ]
+  }
+}
